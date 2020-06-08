@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ddo_profile_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:paddingHorizontal="8dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/ado_list_shimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/imageuser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:src="@drawable/user_circle" />
+
+            <!--        <ImageView
+                        android:layout_alignBottom="@id/tvuser"
+                        android:id="@+id/edit_id"
+                        android:src="@drawable/edit_ic"
+                        android:layout_alignParentRight="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground" />
+                    <ImageView
+                        android:layout_alignBottom="@id/textViewAdo"
+                        android:layout_marginRight="16dp"
+                        android:id="@+id/delete_id"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/delete_ic"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_toLeftOf="@id/edit_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>-->
+
+            <TextView
+                android:id="@+id/textViewAdo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/imageuser"
+                android:background="@color/shimmer_bg"
+                android:textAllCaps="true"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ado_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewAdo"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="16dp"
+                android:layout_toRightOf="@id/imageuser"
+                android:background="@color/shimmer_bg"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

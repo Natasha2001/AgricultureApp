@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">AFL Monitoring</string>
+    <string name="splash_title">GOVERNMENT OF HARYANA</string>
+    <string name="splash_subtitle">DEPARTMENT OF AGRICULTURE \n AND \nFARMER AND WELFARE</string>
+    <string name="login">Login</string>
+    <string name="welcome_admin">Welcome Admin</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="eye_image">Eye image</string>
+    <string name="forget_password"><u>Forgot Password?</u></string>
+
+    //navigation activity
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_logout">Logout</string>
+    <string name="menu_home">HOME</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    //google map key
+    <string name="google_map_key">AIzaSyAUKi9N7ZNLUj3QjYK9Zn-7PxVMw85koOY</string>
+
+
+    //menu items
+    <string name="menu_upload">UPLOAD</string>
+    <string name="menu_ddo">DDA</string>
+    <string name="menu_ado">ADO</string>
+    <string name="menu_location">LOCATIONS</string>
+    <string name="ongoing">ONGOING</string>
+    <string name="completed">COMPLETED</string>
+    <string name="pending">PENDING</string>
+    <string name="rooturl">http://13.235.100.235:8000/api-token-auth/</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_refresh">menu_refresh</string>
+    <string name="no_data_available">No data available</string>
+    <string name="location">LOCATION</string>
+    <string name="signup_ado"><u>Sign Up as ADO</u></string>
+    <string name="signup_dda"><u>Sign Up as DDA</u></string>
+    <string name="log_in">Log In</string>
+</resources>

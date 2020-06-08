@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/map_bottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E8E8E8"
+    android:baselineAligned="false"
+    android:elevation="10dp"
+    android:orientation="vertical"
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="48dp"
+    android:layout_marginRight="88dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:padding="8dp">
+
+        <View
+            android:layout_width="60dp"
+            android:layout_height="8dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bottom_sheet_shape" />
+    </RelativeLayout>
+
+  <!--  <TextView
+        android:textColor="#6A6969"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="18sp"
+        android:textAllCaps="true"
+        android:text="information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PENDING"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:textColor="#6A6969"
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:id="@+id/pending_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ONGOING"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="22sp"
+                android:textColor="#6A6969"
+                android:id="@+id/ongoing_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="COMPLETED"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <TextView
+                android:textColor="#6A6969"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:id="@+id/completed_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="00" />
+        </LinearLayout>
+
+        <!--<View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="12dp"
+            android:background="@color/gray" />
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="12dp"
+            android:background="@color/gray" />-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

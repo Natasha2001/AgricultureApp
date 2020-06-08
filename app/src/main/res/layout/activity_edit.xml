@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.EditActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:textColor="@color/colorPrimary"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Edit Details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+    <Button
+        android:elevation="8dp"
+        android:textColor="#ffffff"
+        android:id="@+id/save_changes_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape"
+        android:text="save changes"
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+<!--
+    <EditText
+        android:gravity="center"
+        android:id="@+id/edit_number"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:hint="Mobile No" />
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_below="@id/edit_number"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:hint="Email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />-->
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardview_rec"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:hint="example"
+                android:id="@+id/edit_name"
+                android:layout_toLeftOf="@id/textname"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/textname"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="NAME"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardview_rec"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:hint="example@gmail.com"
+                android:id="@+id/edit_email"
+                android:layout_toLeftOf="@id/textname2"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/textname2"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="EMAIL"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv3"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardview_rec"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/cv2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:inputType="number"
+                android:hint="12345-67890"
+                android:id="@+id/edit_number"
+                android:layout_toLeftOf="@id/textname3"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:id="@+id/textname3"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="MOBILE"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- <androidx.cardview.widget.CardView
+         android:layout_below="@id/cv3"
+         android:id="@+id/cardview"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginHorizontal="16dp"
+         android:layout_marginTop="16dp"
+         android:elevation="8dp">
+
+         <Spinner
+             android:id="@+id/edit_district"
+             android:layout_width="match_parent"
+             android:layout_height="60dp"
+             android:textAlignment="center" />
+     </androidx.cardview.widget.CardView>-->
+
+
+</RelativeLayout>

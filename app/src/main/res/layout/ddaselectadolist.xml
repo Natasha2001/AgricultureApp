@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/adolistlayout"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp">
+
+            <Button
+                android:layout_centerVertical="true"
+                android:id="@+id/btnAssign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Assign" />
+
+            <!-- <TextView
+                 android:id="@+id/nameofvillage"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@+id/nameofado"
+                 android:layout_marginTop="2dp"
+                 android:text="VillageName"
+                 android:textSize="16dp" />-->
+
+            <TextView
+                android:id="@+id/nameofado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/btnAssign"
+                android:fontFamily="@font/roboto"
+                android:text="AdoName"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+</RelativeLayout>

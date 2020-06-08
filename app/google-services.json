@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "308204444523",
+    "firebase_url": "https://afl-monitoring.firebaseio.com",
+    "project_id": "afl-monitoring",
+    "storage_bucket": "afl-monitoring.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308204444523:android:e4c2bd005b068f75b88a2e",
+        "android_client_info": {
+          "package_name": "com.theagriculture.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308204444523-jc92hoatp86gqm5136ssvdvotn8ftn1d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCk1C7rwf-pVh3bf3AEdoRLcROr87t5TgI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308204444523-jc92hoatp86gqm5136ssvdvotn8ftn1d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

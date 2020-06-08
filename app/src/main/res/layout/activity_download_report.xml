@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Admin.DownloadReportActivity">
+
+    <Button
+        android:id="@+id/download_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Download" />
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/end_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardview"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="16dp"
+            android:text="TO :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/end_date"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/end_textview"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:gravity="center"
+            android:maxLength="10"
+            android:text="01-01-20XX" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/start_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="FROM :"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        <Button
+            android:id="@+id/start_date"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/start_textview"
+            android:layout_marginTop="8dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down"
+            android:maxLength="10"
+            android:text="01-01-20XX" />
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/status_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusTextview"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <RadioButton
+            android:id="@+id/pending_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="Pending" />
+
+        <RadioButton
+            android:id="@+id/ongoing_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="Ongoing" />
+
+        <RadioButton
+            android:id="@+id/completed_radio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onRadioButtonClicked"
+            android:text="Completed" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/statusTextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="STATUS :"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/status_group"
+        android:layout_marginTop="24dp"
+        app:cardCornerRadius="3dp">
+
+        <RelativeLayout
+            android:id="@+id/first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/district_progressbar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="48dp"
+                android:indeterminateDrawable="@drawable/progress" />
+
+            <Spinner
+                android:id="@+id/district_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentTop="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

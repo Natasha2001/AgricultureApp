@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:id="@+id/linearcount">
+
+    <TextView
+        android:layout_width="115dp"
+        android:layout_height="22dp"
+        android:text="YAMUNANAGAR"
+        android:id="@+id/distval2"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="22sp"
+        android:layout_marginStart="0dp"
+        android:text="8"
+        android:id="@+id/pendingval2"
+        android:textSize="15sp"
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="70sp"
+        android:layout_height="22sp"
+        android:layout_marginStart="8dp"
+        android:text="3"
+        android:id="@+id/ongoingval2"
+        android:gravity="center"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="91dp"
+        android:layout_height="22dp"
+        android:textSize="15sp"
+        android:text="11"
+        android:id="@+id/completedval2"
+        android:gravity="center"
+        android:layout_marginStart="8dp"/>
+</LinearLayout>

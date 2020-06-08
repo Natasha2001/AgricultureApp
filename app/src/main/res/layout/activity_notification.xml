@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.NotificationActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv1"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardview_rec"
+        android:layout_marginHorizontal="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:hint="example"
+                android:id="@+id/title1"
+                android:layout_toLeftOf="@id/title"
+                android:textSize="18sp"
+                android:layout_marginHorizontal="8dp"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/title"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="Title"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv2"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/cardview_rec"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/cv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/title2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginRight="7dp"
+                android:layout_toLeftOf="@id/titlenext"
+                android:background="@android:color/transparent"
+                android:hint="example"
+                android:minLines="5"
+                android:textSize="18sp" />
+
+            <TextView
+                android:textAllCaps="true"
+                android:id="@+id/titlenext"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="message"
+                android:layout_marginRight="16dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/send_notification"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape"
+        android:text="send notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

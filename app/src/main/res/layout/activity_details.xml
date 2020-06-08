@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.detailsActivity">
+
+    <TextView
+        android:id="@+id/nodetail_text"
+        android:visibility="gone"
+        android:textSize="18sp"
+        android:text="NO DETAILS AVAILABLE"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:id="@+id/ado_appointed"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="16dp"
+            android:text="ADO APPOINTED:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/ado_appointed"
+            android:id="@+id/cv1"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cardview_rec"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:text="default"
+                    android:id="@+id/adodetail_name"
+                    android:layout_toLeftOf="@id/textname1"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/textname1"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="ADO NAME"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/cv1"
+            android:id="@+id/cv2"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cardview_rec"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:text="default"
+                    android:id="@+id/adodetail_email"
+                    android:layout_toLeftOf="@id/textname2"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/textname2"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="ADO EMAIL"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/cv2"
+            android:id="@+id/cv3"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cardview_rec"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:text="default"
+                    android:id="@+id/adodetail_phone"
+                    android:layout_toLeftOf="@id/textname3"
+                    android:textIsSelectable="true"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/textname3"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="ADO NUMBER"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_below="@+id/cv3"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:id="@+id/ddo_appointed"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="16dp"
+            android:text="DDA APPOINTED:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/ddo_appointed"
+            android:id="@+id/cv4"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cardview_rec"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:text="default"
+                    android:id="@+id/ddadetail_name"
+                    android:layout_toLeftOf="@id/textname4"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/textname4"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="DDA NAME"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/cv4"
+            android:id="@+id/cv5"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cardview_rec"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:text="default"
+                    android:id="@+id/ddadetail_email"
+                    android:layout_toLeftOf="@id/textname5"
+                    android:textIsSelectable="true"
+                    android:textSize="14sp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/textname5"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="DDA EMAIL"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/cv5"
+            android:id="@+id/cv6"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/cardview_rec"
+            android:layout_marginRight="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:textAllCaps="true"
+                    android:gravity="center_vertical"
+                    android:text="default"
+                    android:id="@+id/ddadetail_phone"
+                    android:layout_toLeftOf="@id/textname6"
+                    android:textIsSelectable="true"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:textSize="14sp"
+                    android:layout_height="60dp"/>
+
+                <TextView
+                    android:id="@+id/textname6"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="DDA NUMBER"
+                    android:layout_marginRight="16dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </RelativeLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

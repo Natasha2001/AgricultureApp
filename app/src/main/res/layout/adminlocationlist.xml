@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/adminlocation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="8dp"
+        android:layout_marginTop="8dp"
+        android:elevation="8dp">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/locations_shimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp">
+
+                <TextView
+                    android:layout_marginTop="4dp"
+                    android:layout_below="@id/address"
+                    android:id="@+id/dda_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/shimmer_bg"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/ada_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/dda_name"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/shimmer_bg"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/ada_name"
+                    android:layout_marginBottom="4dp"
+                    android:background="@color/shimmer_bg"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/shimmer_bg"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
